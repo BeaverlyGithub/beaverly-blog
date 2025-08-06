@@ -10,8 +10,14 @@ import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import { useEffect } from "react";
+import { initGA } from "./lib/analytics";
+import { useAnalytics } from "./hooks/use-analytics";
 
 function Router() {
+  // Track page views when routes change
+  useAnalytics();
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -29,6 +35,11 @@ function Router() {
 }
 
 function App() {
+  // Initialize Google Analytics when app loads
+  useEffect(() => {
+    initGA();
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -63,6 +64,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="nav-cta"
               data-testid="main-site-link"
+              onClick={() => trackEvent('click', 'navigation', 'main_site_link')}
             >
               Main Site
             </a>

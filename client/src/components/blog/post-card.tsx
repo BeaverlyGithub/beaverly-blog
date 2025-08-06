@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { BlogPost } from "@shared/schema";
 import { calculateReadingTime } from "@/lib/reading-time";
+import { trackEvent } from "@/lib/analytics";
 
 interface PostCardProps {
   post: BlogPost;
@@ -21,9 +22,13 @@ export default function PostCard({ post, featured = false, compact = false, list
 
   const readingTime = calculateReadingTime(post.content);
 
+  const handlePostClick = () => {
+    trackEvent('click', 'blog_post', post.slug, readingTime);
+  };
+
   if (list) {
     return (
-      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`}>
+      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`} onClick={handlePostClick}>
         <div className="border-b border-primary pb-6 hover:border-secondary transition-colors duration-300">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex-1">
@@ -63,7 +68,7 @@ export default function PostCard({ post, featured = false, compact = false, list
 
   if (compact) {
     return (
-      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`}>
+      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`} onClick={handlePostClick}>
         <article className="card card-compact hover-lift">
           <div className="flex flex-wrap gap-2 mb-3">
             {post.tags && post.tags.slice(0, 2).map((tag) => (
@@ -95,7 +100,7 @@ export default function PostCard({ post, featured = false, compact = false, list
 
   if (featured) {
     return (
-      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`}>
+      <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`} onClick={handlePostClick}>
         <article className="card card-large hover-lift">
           <div className="flex flex-wrap gap-2 mb-6">
             {post.tags && post.tags.slice(0, 3).map((tag) => (
@@ -139,7 +144,7 @@ export default function PostCard({ post, featured = false, compact = false, list
   }
 
   return (
-    <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`}>
+    <Link href={`/blog/${post.slug}`} className="block group" data-testid={`post-card-${post.slug}`} onClick={handlePostClick}>
       <article className="card hover-lift">
         <div className="flex flex-wrap gap-2 mb-4">
           {post.tags && post.tags.slice(0, 3).map((tag) => (
