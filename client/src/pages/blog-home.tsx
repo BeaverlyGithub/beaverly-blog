@@ -4,10 +4,12 @@ import { BlogPost } from "@shared/schema";
 import PostCard from "@/components/blog/post-card";
 import SEOHead from "@/components/seo-head";
 import { ArrowRight } from "lucide-react";
+import { apiClient } from "@/lib/api";
 
 export default function BlogHome() {
   const { data: posts, isLoading, error } = useQuery<BlogPost[]>({
-    queryKey: ["/api/blog/posts"],
+    queryKey: ["blog-posts"],
+    queryFn: () => apiClient.getBlogPosts(),
   });
 
   if (error) {

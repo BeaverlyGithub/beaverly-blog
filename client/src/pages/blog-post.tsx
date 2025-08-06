@@ -4,12 +4,16 @@ import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
 import { BlogPost } from "@shared/schema";
 import { renderMarkdown } from "@/lib/markdown";
 import SEOHead from "@/components/seo-head";
+import { apiClient } from "@/lib/api";
+import { calculateReadingTime } from "@/lib/reading-time";
 
 export default function BlogPostPage() {
   const { slug } = useParams();
   
-  const { data: post, isLoading, error } = useQuery<BlogPost>({
-    queryKey: ["/api/blog/posts", slug],
+  const { data: post, isLoading, error } = useQuery<BlogPost | null>({
+    queryKey: ["blog-post", slug],
+    queryFn: () => apiClient.getBlogPost(slug!),
+    enabled: !!slug,
   });
 
   if (isLoading) {
@@ -45,7 +49,7 @@ export default function BlogPostPage() {
     });
   };
 
-  const readingTime = Math.ceil(post.content.length / 1000);
+  const readingTime = calculateReadingTime(post.content);
 
   return (
     <>
