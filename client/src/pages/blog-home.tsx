@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { BlogPost } from "@shared/schema";
 import PostCard from "@/components/blog/post-card";
 import SEOHead from "@/components/seo-head";
+import { ArrowRight } from "lucide-react";
 
 export default function BlogHome() {
   const { data: posts, isLoading, error } = useQuery<BlogPost[]>({
@@ -14,104 +15,151 @@ export default function BlogHome() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-red-400 mb-4">Error Loading Blog Posts</h1>
-          <p className="text-gray-400">Failed to load blog posts. Please try again later.</p>
+          <p className="text-secondary">Failed to load blog posts. Please try again later.</p>
         </div>
       </div>
     );
   }
 
   const featuredPost = posts?.[0];
-  const sidePosts = posts?.slice(1, 3) || [];
-  const morePosts = posts?.slice(3) || [];
+  const recentPosts = posts?.slice(1) || [];
 
   return (
     <>
       <SEOHead
-        title="Beaverly Blog - Chilling with AI and Building Wealth"
-        description="Official blog from Beaverly® — Chilling with AI and building wealth through intelligent automation."
+        title="Beaverly Blog - AI-Powered Financial Insights"
+        description="Official blog from Beaverly® — Exploring the future of finance through AI automation, intelligent trading, and innovative fintech solutions."
         url="https://blog.beaverlyai.com"
       />
       
       <main className="min-h-screen" data-testid="blog-home">
-        {/* Hero Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text" data-testid="blog-title">
-              Beaverly Blog
-            </h1>
-            <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-              Official insights from Beaverly® — Chilling with AI and building wealth through intelligent automation.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
-              <span className="px-3 py-1 bg-gray-800 rounded-full">AI Trading</span>
-              <span className="px-3 py-1 bg-gray-800 rounded-full">Fintech Innovation</span>
-              <span className="px-3 py-1 bg-gray-800 rounded-full">Automated Investing</span>
-              <span className="px-3 py-1 bg-gray-800 rounded-full">Financial Technology</span>
+        {/* Hero Section - OpenAI Style */}
+        <section className="hero-large">
+          <div className="container">
+            <div className="hero-content fade-in">
+              <h1 className="hero-title" data-testid="blog-title">
+                The Future of Finance
+              </h1>
+              <p className="hero-subtitle">
+                Insights into AI-powered trading, automated investing, and the next generation of financial technology from the team at Beaverly.
+              </p>
+              <div className="hero-actions">
+                <Link href="/about" className="btn btn-primary btn-large">
+                  Learn About Beaverly
+                  <ArrowRight size={20} />
+                </Link>
+                <Link href="/contact" className="btn btn-secondary btn-large">
+                  Get in Touch
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Posts Grid */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center" data-testid="latest-insights-title">
-              Latest Insights
-            </h2>
-            
-            {isLoading ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[...Array(6)].map((_, i) => (
-                  <div key={i} className="bg-gray-800 rounded-xl p-8 animate-pulse">
-                    <div className="h-4 bg-gray-700 rounded mb-4"></div>
-                    <div className="h-6 bg-gray-700 rounded mb-4"></div>
-                    <div className="h-16 bg-gray-700 rounded"></div>
-                  </div>
-                ))}
+        {/* Featured Article Section */}
+        {featuredPost && (
+          <section className="section">
+            <div className="container">
+              <div className="fade-in-up">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold mb-4">Featured Article</h2>
+                  <p className="text-large text-secondary max-w-2xl mx-auto">
+                    Deep dive into our latest insights on AI automation and financial technology.
+                  </p>
+                </div>
+                <article data-testid="featured-post" className="fade-in-up">
+                  <PostCard post={featuredPost} featured />
+                </article>
               </div>
-            ) : posts && posts.length > 0 ? (
-              <>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                  {/* Featured Post */}
-                  {featuredPost && (
-                    <article className="md:col-span-2 lg:col-span-2" data-testid="featured-post">
-                      <PostCard post={featuredPost} featured />
-                    </article>
-                  )}
+            </div>
+          </section>
+        )}
 
-                  {/* Side Posts */}
-                  <div className="space-y-8">
-                    {sidePosts.map((post) => (
-                      <article key={post.id} data-testid={`side-post-${post.slug}`}>
-                        <PostCard post={post} compact />
+        {/* Recent Articles Grid */}
+        {recentPosts.length > 0 && (
+          <section className="section section-alt">
+            <div className="container">
+              <div className="fade-in-up">
+                <div className="text-center mb-12">
+                  <h2 className="text-3xl font-bold mb-4" data-testid="latest-insights-title">
+                    Latest Insights
+                  </h2>
+                  <p className="text-large text-secondary max-w-2xl mx-auto">
+                    Stay updated with our research on AI trading systems, market intelligence, and financial automation.
+                  </p>
+                </div>
+                
+                {isLoading ? (
+                  <div className="grid-blog">
+                    {[...Array(6)].map((_, i) => (
+                      <div key={i} className="card animate-pulse">
+                        <div className="h-4 bg-tertiary rounded mb-4"></div>
+                        <div className="h-6 bg-tertiary rounded mb-4"></div>
+                        <div className="h-16 bg-tertiary rounded"></div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid-blog">
+                    {recentPosts.map((post, index) => (
+                      <article 
+                        key={post.id} 
+                        data-testid={`recent-post-${post.slug}`}
+                        className="fade-in-up"
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        <PostCard post={post} />
                       </article>
                     ))}
                   </div>
-                </div>
-
-                {/* More Posts List */}
-                {morePosts.length > 0 && (
-                  <div className="border-t border-gray-700 pt-12">
-                    <h3 className="text-xl font-semibold mb-8" data-testid="more-articles-title">
-                      More Articles
-                    </h3>
-                    <div className="space-y-6">
-                      {morePosts.map((post) => (
-                        <article key={post.id} data-testid={`more-post-${post.slug}`}>
-                          <PostCard post={post} list />
-                        </article>
-                      ))}
-                    </div>
-                  </div>
                 )}
-              </>
-            ) : (
-              <div className="text-center py-16">
-                <h3 className="text-2xl font-semibold mb-4">No Blog Posts Yet</h3>
-                <p className="text-gray-400">Check back soon for the latest insights from Beaverly.</p>
               </div>
-            )}
+            </div>
+          </section>
+        )}
+
+        {/* Call to Action Section */}
+        <section className="section">
+          <div className="container">
+            <div className="fade-in-up">
+              <div className="text-center">
+                <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Investing?</h2>
+                <p className="text-large text-secondary mb-8 max-w-2xl mx-auto">
+                  Discover how Beaverly's AI-powered ecosystem can automate your trading and optimize your portfolio.
+                </p>
+                <div className="flex gap-4 justify-center flex-wrap">
+                  <a 
+                    href="https://beaverlyai.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-large"
+                  >
+                    Explore Our Platform
+                    <ArrowRight size={20} />
+                  </a>
+                  <Link href="/about" className="btn btn-ghost btn-large">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        {/* Loading State */}
+        {posts && posts.length === 0 && !isLoading && (
+          <section className="section">
+            <div className="container">
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold mb-4">No Articles Yet</h3>
+                <p className="text-secondary mb-8">We're working on bringing you the latest insights. Check back soon!</p>
+                <Link href="/about" className="btn btn-primary">
+                  Learn About Beaverly
+                </Link>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
     </>
   );
