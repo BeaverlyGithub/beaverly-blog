@@ -11,8 +11,12 @@ export default function Footer() {
             <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="/beaverly-logo.png" 
-                alt="Beaverly" 
+                alt="Beaverly Logo" 
                 className="w-8 h-8 rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  console.log('Logo failed to load');
+                }}
               />
               <span className="text-xl font-semibold">
                 Beaverly<span className="text-sm">®</span>
