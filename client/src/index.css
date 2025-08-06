@@ -16,14 +16,14 @@
   --text-muted: #787878;
   --text-inverse: #0f0f0f;
   
-  --accent-primary: #10a37f;
-  --accent-secondary: #1a7f64;
+  --accent-primary: #ffffff;
+  --accent-secondary: #f0f0f0;
   --accent-blue: #6366f1;
   --accent-purple: #8b5cf6;
   
   --border-primary: #2a2a2a;
   --border-secondary: #404040;
-  --border-accent: #10a37f;
+  --border-accent: #ffffff;
   
   --surface-hover: #252525;
   --surface-active: #2f2f2f;
@@ -398,10 +398,12 @@
   .btn-primary {
     background: var(--accent-primary);
     color: var(--text-inverse);
+    border: 1px solid var(--accent-primary);
   }
 
   .btn-primary:hover {
     background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
     color: var(--text-inverse);
@@ -409,15 +411,16 @@
   }
 
   .btn-secondary {
-    background: var(--bg-tertiary);
+    background: transparent;
     color: var(--text-primary);
     border: 1px solid var(--border-secondary);
   }
 
   .btn-secondary:hover {
-    background: var(--bg-quaternary);
-    border-color: var(--border-accent);
-    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    transform: translateY(-1px);
     text-decoration: none;
   }
 

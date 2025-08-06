@@ -5,6 +5,7 @@ This is a modern blog application for Beaverly Innovative Systems, a fintech AI 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Brand Identity: Sophisticated black and white minimalist design inspired by the Beaverly logo (rounded square black/white design).
 
 # System Architecture
 

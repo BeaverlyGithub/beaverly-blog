@@ -29,8 +29,8 @@ export default function Navbar() {
         <div className="nav-content">
           {/* Logo */}
           <Link href="/" className="nav-logo" data-testid="logo-link">
-            <div className="nav-logo-icon">
-              <span>B</span>
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+              <div className="w-5 h-5 bg-black rounded-md"></div>
             </div>
             <span>
               Beaverly<span className="text-sm opacity-75">®</span>
