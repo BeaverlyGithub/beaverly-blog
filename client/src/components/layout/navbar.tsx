@@ -30,9 +30,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="nav-logo" data-testid="logo-link">
             <img 
-              src="/beaverly-logo.png" 
+              src="/beaverly-logo-light.png" 
               alt="Beaverly" 
-              className="w-8 h-8 rounded-lg"
+              className="w-8 h-8"
             />
             <span>
               Beaverly<span className="text-sm opacity-75">®</span>
