@@ -1,4 +1,4 @@
-import { BlogPost } from "@shared/schema";
+import { BlogPost } from "@/types/schema";
 
 // Static blog post data for deployment without backend
 export const staticBlogPosts: BlogPost[] = [

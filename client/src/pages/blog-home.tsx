@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
-import { BlogPost } from "@shared/schema";
+import { BlogPost } from "@/types/schema";
 import PostCard from "@/components/blog/post-card";
 import SEOHead from "@/components/seo-head";
 import { ArrowRight } from "lucide-react";

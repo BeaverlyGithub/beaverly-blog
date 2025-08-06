@@ -1,6 +1,6 @@
 # Overview
 
-This is a modern blog application for Beaverly Innovative Systems, a fintech AI startup. The blog serves as the official platform for sharing insights about AI trading, automated investing, and financial technology innovations. Built as a full-stack web application with a React frontend and Express.js backend, it provides a clean, production-ready blogging platform with dark theme aesthetics and modern UI components.
+This is a modern blog application for Beaverly Innovative Systems, a fintech AI startup. The blog serves as the official platform for sharing insights about AI trading, automated investing, and financial technology innovations. Built as a pure static React application, it provides a clean, production-ready blogging platform with dark theme aesthetics and modern UI components that can be deployed anywhere without backend requirements.
 
 # User Preferences
 
@@ -17,16 +17,11 @@ Brand Identity: Sophisticated black and white minimalist design inspired by the 
 - **Build Tool**: Vite for fast development and optimized production builds
 - **Theme**: Dark-first design with Inter font, following modern fintech aesthetics
 
-## Backend Architecture
-- **Runtime**: Node.js with Express.js framework for RESTful API endpoints
-- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
-- **Storage Strategy**: Hybrid approach with in-memory storage for development and PostgreSQL schema for production
-- **API Design**: RESTful endpoints for blog post retrieval (`/api/blog/posts` and `/api/blog/posts/:slug`)
-
-## Database Schema
-- **Blog Posts Table**: Contains id, slug, title, description, content, author, publication date, and tags array
-- **Users Table**: Basic user structure with id, username, and password (prepared for future authentication)
-- **ORM**: Drizzle with Zod schema validation for runtime type checking
+## Static Architecture
+- **Data Management**: Static blog posts defined in TypeScript arrays
+- **Content Structure**: Blog posts with id, slug, title, description, content, author, publication date, and tags
+- **Type Safety**: TypeScript interfaces for runtime type checking
+- **No Backend Required**: Pure static deployment compatible with any hosting platform
 
 ## Development Workflow
 - **Development Server**: Vite dev server with hot module replacement and Express API proxy

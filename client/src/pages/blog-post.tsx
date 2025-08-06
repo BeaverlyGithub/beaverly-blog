@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
-import { BlogPost } from "@shared/schema";
+import { BlogPost } from "@/types/schema";
 import { renderMarkdown } from "@/lib/markdown";
 import SEOHead from "@/components/seo-head";
 import { apiClient } from "@/lib/api";

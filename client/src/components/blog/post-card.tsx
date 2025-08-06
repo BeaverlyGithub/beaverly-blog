@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
-import { BlogPost } from "@shared/schema";
+import { BlogPost } from "@/types/schema";
 import { calculateReadingTime } from "@/lib/reading-time";
 import { trackEvent } from "@/lib/analytics";
 
