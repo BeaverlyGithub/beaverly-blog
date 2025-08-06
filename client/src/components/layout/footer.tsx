@@ -9,9 +9,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                <span className="text-black font-bold text-sm">B</span>
-              </div>
+              <img 
+                src="/beaverly-logo.png" 
+                alt="Beaverly" 
+                className="w-8 h-8 rounded-lg"
+              />
               <span className="text-xl font-semibold">
                 Beaverly<span className="text-sm">®</span>
               </span>
