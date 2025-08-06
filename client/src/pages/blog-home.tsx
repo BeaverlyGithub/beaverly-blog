@@ -29,14 +29,14 @@ export default function BlogHome() {
   return (
     <>
       <SEOHead
-        title="Beaverly Blog - AI-Powered Financial Insights | Chilla Trading Bot"
-        description="Official blog from Beaverly® — Chilla AI trading bot, forex automation, MT5 bot, best investment company. Chill with your money using our financial co-pilot."
+        title="Beaverly updates - AI Financial Co-Pilot Insights"
+        description="Official updates page from Beaverly®, the AI-powered financial co-pilot. Stay informed about our latest developments, research, and insights into AI powered automation."
         url="https://blog.beaverlyai.com"
         keywords="chilla, beaverly, beaverly ai, beverly, AI trading, forex automation, MT5 bot, trading bot, chill with your money, financial co-pilot, forex trading, free vps, best investment, investment, best investment company, legit investment, safe investment, grow my money, stock trading, ai co-pilot"
       />
       
       <main className="min-h-screen" data-testid="blog-home">
-        {/* Hero Section - OpenAI Style */}
+        {/* Hero Section */}
         <section className="hero-large">
           <div className="container">
             <div className="hero-content fade-in">
@@ -44,7 +44,7 @@ export default function BlogHome() {
                 The Future of Finance
               </h1>
               <p className="hero-subtitle">
-                Insights into AI-powered trading, automated investing, and the next generation of financial technology from the team at Beaverly.
+                Insights into AI-powered wealth automation, personal wealth co-pilot, and the next generation of financial technology from the team at Beaverly.
               </p>
               <div className="hero-actions">
                 <a href="https://app.beaverlyai.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
@@ -88,7 +88,7 @@ export default function BlogHome() {
                     Latest Insights
                   </h2>
                   <p className="text-large text-secondary max-w-2xl mx-auto">
-                    Stay updated with our research on AI trading systems, market intelligence, and financial automation.
+                    Stay updated with our research on AI financial systems, market intelligence, and financial automation.
                   </p>
                 </div>
                 
@@ -126,9 +126,9 @@ export default function BlogHome() {
           <div className="container">
             <div className="fade-in-up">
               <div className="text-center">
-                <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Investing?</h2>
+                <h2 className="text-3xl font-bold mb-6">Ready to Automate And Scale?</h2>
                 <p className="text-large text-secondary mb-8 max-w-2xl mx-auto">
-                  Discover how Beaverly's AI-powered ecosystem can automate your trading and optimize your portfolio.
+                  Discover how Beaverly's AI-powered ecosystem can automate and help you scale effortlessly.
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
                   <a 

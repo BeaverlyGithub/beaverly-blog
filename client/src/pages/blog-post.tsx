@@ -54,7 +54,7 @@ export default function BlogPostPage() {
   return (
     <>
       <SEOHead
-        title={`${post.title} | Beaverly Blog - Chilla Trading Bot`}
+        title={`${post.title} | Beaverly Blog - Chilla AI Co-Pilot`}
         description={post.description}
         url={`https://blog.beaverlyai.com/blog/${post.slug}`}
         keywords="chilla, beaverly, beaverly ai, AI trading, forex automation, MT5 bot, trading bot, financial co-pilot, forex trading, investment, stock trading, ai co-pilot"

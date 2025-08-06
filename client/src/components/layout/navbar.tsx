@@ -10,7 +10,11 @@ export default function Navbar() {
 
   const isActive = (path: string) => {
     if (path === "/" || path === "/blog") {
-      return location === "/" || location === "/blog" || location.startsWith("/blog/");
+      return (
+        location === "/" ||
+        location === "/blog" ||
+        location.startsWith("/blog/")
+      );
     }
     return location === path;
   };
@@ -20,69 +24,76 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`nav-header ${isScrolled ? 'nav-scrolled' : ''}`} data-testid="navbar">
+    <nav
+      className={`nav-header ${isScrolled ? "nav-scrolled" : ""}`}
+      data-testid="navbar"
+    >
       <div className="container-wide">
         <div className="nav-content">
           {/* Logo */}
           <Link href="/" className="nav-logo" data-testid="logo-link">
-            <img 
-              src="/beaverly-logo.png" 
-              alt="Beaverly - AI Trading & Forex Automation" 
+            <img
+              src="/beaverly-logo.png"
+              alt="Beaverly - AI Trading & Forex Automation"
               className="h-8 w-auto"
             />
             <span className="ml-2">
               Beaverly<span className="text-sm opacity-75">®</span>
             </span>
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="nav-menu hidden-mobile">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className={`nav-link ${isActive("/blog") ? "active" : ""}`}
               data-testid="nav-blog"
             >
               Blog
             </Link>
-            <a 
-              href="https://beaverlyai.com#about" 
+            <a
+              href="https://beaverlyai.com#about"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"
               data-testid="nav-about"
-              onClick={() => trackEvent('click', 'navigation', 'about_section')}
+              onClick={() => trackEvent("click", "navigation", "about_section")}
             >
               About
             </a>
-            <a 
-              href="https://beaverlyai.com#contact" 
+            <a
+              href="https://beaverlyai.com#contact"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"
               data-testid="nav-contact"
-              onClick={() => trackEvent('click', 'navigation', 'contact_section')}
+              onClick={() =>
+                trackEvent("click", "navigation", "contact_section")
+              }
             >
               Contact
             </a>
-            <a 
-              href="https://app.beaverlyai.com" 
+            <a
+              href="https://app.beaverlyai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
               data-testid="start-chilling-link"
-              onClick={() => trackEvent('click', 'navigation', 'start_chilling')}
+              onClick={() =>
+                trackEvent("click", "navigation", "start_chilling")
+              }
             >
               Start Chilling Now
             </a>
           </div>
-          
+
           {/* Mobile menu button */}
-          <button 
+          <button
             className="mobile-menu-button hidden-desktop"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             data-testid="mobile-menu-button"
@@ -95,16 +106,16 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="mobile-menu hidden-desktop" data-testid="mobile-menu">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className={`nav-link ${isActive("/blog") ? "active" : ""}`}
               onClick={() => setIsMenuOpen(false)}
               data-testid="mobile-nav-blog"
             >
               Blog
             </Link>
-            <a 
-              href="https://beaverlyai.com#about" 
+            <a
+              href="https://beaverlyai.com#about"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"
@@ -113,8 +124,8 @@ export default function Navbar() {
             >
               About
             </a>
-            <a 
-              href="https://beaverlyai.com#contact" 
+            <a
+              href="https://beaverlyai.com#contact"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"
@@ -123,8 +134,8 @@ export default function Navbar() {
             >
               Contact
             </a>
-            <a 
-              href="https://app.beaverlyai.com" 
+            <a
+              href="https://app.beaverlyai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
