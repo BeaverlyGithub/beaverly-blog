@@ -5,9 +5,10 @@ interface SEOHeadProps {
   description: string;
   url?: string;
   image?: string;
+  keywords?: string;
 }
 
-export default function SEOHead({ title, description, url, image }: SEOHeadProps) {
+export default function SEOHead({ title, description, url, image, keywords }: SEOHeadProps) {
   useEffect(() => {
     // Update title
     document.title = title;
@@ -20,6 +21,17 @@ export default function SEOHead({ title, description, url, image }: SEOHeadProps
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', description);
+
+    // Update meta keywords
+    if (keywords) {
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (!metaKeywords) {
+        metaKeywords = document.createElement('meta');
+        metaKeywords.setAttribute('name', 'keywords');
+        document.head.appendChild(metaKeywords);
+      }
+      metaKeywords.setAttribute('content', keywords);
+    }
 
     // Update Open Graph tags
     const updateMetaProperty = (property: string, content: string) => {
@@ -74,7 +86,7 @@ export default function SEOHead({ title, description, url, image }: SEOHeadProps
       }
       canonical.setAttribute('href', url);
     }
-  }, [title, description, url, image]);
+  }, [title, description, url, image, keywords]);
 
   return null;
 }

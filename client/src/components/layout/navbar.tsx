@@ -30,7 +30,12 @@ export default function Navbar() {
         <div className="nav-content">
           {/* Logo */}
           <Link href="/" className="nav-logo" data-testid="logo-link">
-            <span>
+            <img 
+              src="/beaverly-logo.png" 
+              alt="Beaverly - AI Trading & Forex Automation" 
+              className="h-8 w-auto"
+            />
+            <span className="ml-2">
               Beaverly<span className="text-sm opacity-75">®</span>
             </span>
           </Link>
@@ -44,29 +49,35 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            <Link 
-              href="/about" 
-              className={`nav-link ${isActive("/about") ? "active" : ""}`}
+            <a 
+              href="https://beaverlyai.com#about" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
               data-testid="nav-about"
+              onClick={() => trackEvent('click', 'navigation', 'about_section')}
             >
               About
-            </Link>
-            <Link 
-              href="/contact" 
-              className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+            </a>
+            <a 
+              href="https://beaverlyai.com#contact" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
               data-testid="nav-contact"
+              onClick={() => trackEvent('click', 'navigation', 'contact_section')}
             >
               Contact
-            </Link>
+            </a>
             <a 
-              href="https://beaverlyai.com" 
+              href="https://app.beaverlyai.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
-              data-testid="main-site-link"
-              onClick={() => trackEvent('click', 'navigation', 'main_site_link')}
+              data-testid="start-chilling-link"
+              onClick={() => trackEvent('click', 'navigation', 'start_chilling')}
             >
-              Main Site
+              Start Chilling Now
             </a>
           </div>
           
@@ -92,30 +103,35 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            <Link 
-              href="/about" 
-              className={`nav-link ${isActive("/about") ? "active" : ""}`}
+            <a 
+              href="https://beaverlyai.com#about" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
               onClick={() => setIsMenuOpen(false)}
               data-testid="mobile-nav-about"
             >
               About
-            </Link>
-            <Link 
-              href="/contact" 
-              className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+            </a>
+            <a 
+              href="https://beaverlyai.com#contact" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
               onClick={() => setIsMenuOpen(false)}
               data-testid="mobile-nav-contact"
             >
               Contact
-            </Link>
+            </a>
             <a 
-              href="https://beaverlyai.com" 
+              href="https://app.beaverlyai.com" 
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
-              data-testid="mobile-main-site-link"
+              onClick={() => setIsMenuOpen(false)}
+              data-testid="mobile-start-chilling-link"
             >
-              Main Site
+              Start Chilling Now
             </a>
           </div>
         )}

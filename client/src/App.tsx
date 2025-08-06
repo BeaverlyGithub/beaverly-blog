@@ -6,8 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import BlogHome from "@/pages/blog-home";
 import BlogPostPage from "@/pages/blog-post";
-import About from "@/pages/about";
-import Contact from "@/pages/contact";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { useEffect } from "react";
@@ -25,8 +23,6 @@ function Router() {
         <Route path="/" component={BlogHome} />
         <Route path="/blog" component={BlogHome} />
         <Route path="/blog/:slug" component={BlogPostPage} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

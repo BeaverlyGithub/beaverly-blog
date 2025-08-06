@@ -29,9 +29,10 @@ export default function BlogHome() {
   return (
     <>
       <SEOHead
-        title="Beaverly Blog - AI-Powered Financial Insights"
-        description="Official blog from Beaverly® — Exploring the future of finance through AI automation, intelligent trading, and innovative fintech solutions."
+        title="Beaverly Blog - AI-Powered Financial Insights | Chilla Trading Bot"
+        description="Official blog from Beaverly® — Chilla AI trading bot, forex automation, MT5 bot, best investment company. Chill with your money using our financial co-pilot."
         url="https://blog.beaverlyai.com"
+        keywords="chilla, beaverly, beaverly ai, beverly, AI trading, forex automation, MT5 bot, trading bot, chill with your money, financial co-pilot, forex trading, free vps, best investment, investment, best investment company, legit investment, safe investment, grow my money, stock trading, ai co-pilot"
       />
       
       <main className="min-h-screen" data-testid="blog-home">
@@ -46,13 +47,13 @@ export default function BlogHome() {
                 Insights into AI-powered trading, automated investing, and the next generation of financial technology from the team at Beaverly.
               </p>
               <div className="hero-actions">
-                <Link href="/about" className="btn btn-primary btn-large">
-                  Learn About Beaverly
+                <a href="https://app.beaverlyai.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
+                  Start Chilling Now
                   <ArrowRight size={20} />
-                </Link>
-                <Link href="/contact" className="btn btn-secondary btn-large">
-                  Get in Touch
-                </Link>
+                </a>
+                <a href="https://beaverlyai.com#about" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-large">
+                  Learn About Chilla
+                </a>
               </div>
             </div>
           </div>
@@ -131,17 +132,17 @@ export default function BlogHome() {
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
                   <a 
-                    href="https://beaverlyai.com" 
+                    href="https://app.beaverlyai.com" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-large"
                   >
-                    Explore Our Platform
+                    Start Chilling Now
                     <ArrowRight size={20} />
                   </a>
-                  <Link href="/about" className="btn btn-ghost btn-large">
-                    Learn More
-                  </Link>
+                  <a href="https://beaverlyai.com#about" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-large">
+                    Learn About Chilla
+                  </a>
                 </div>
               </div>
             </div>
@@ -155,9 +156,9 @@ export default function BlogHome() {
               <div className="text-center">
                 <h3 className="text-2xl font-semibold mb-4">No Articles Yet</h3>
                 <p className="text-secondary mb-8">We're working on bringing you the latest insights. Check back soon!</p>
-                <Link href="/about" className="btn btn-primary">
-                  Learn About Beaverly
-                </Link>
+                <a href="https://beaverlyai.com#about" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  Learn About Chilla
+                </a>
               </div>
             </div>
           </section>
