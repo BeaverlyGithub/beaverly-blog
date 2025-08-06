@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { BlogPost } from "@shared/schema";
+import { calculateReadingTime } from "@/lib/reading-time";
 
 interface PostCardProps {
   post: BlogPost;
@@ -18,7 +19,7 @@ export default function PostCard({ post, featured = false, compact = false, list
     });
   };
 
-  const readingTime = Math.ceil(post.content.length / 1000);
+  const readingTime = calculateReadingTime(post.content);
 
   if (list) {
     return (
