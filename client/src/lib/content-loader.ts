@@ -1,4 +1,3 @@
-
 import { BlogPost } from "@/types/schema";
 
 // Content loader for Markdown files
@@ -58,54 +57,14 @@ export class ContentLoader {
     }
 
     try {
-      // Import markdown files directly - this works better with Vite's build process
-      const posts: BlogPost[] = [];
-      
-      // Import each markdown file directly using relative paths
-      try {
-        const howChillaWorks = await import('../../../content/posts/how-chilla-works.md?raw');
-        const { frontmatter, content: markdownContent } = this.parseFrontmatter(howChillaWorks.default);
-        posts.push({
-          id: frontmatter.id,
-          slug: frontmatter.slug,
-          title: frontmatter.title,
-          description: frontmatter.description,
-          content: markdownContent,
-          author: frontmatter.author,
-          pubDate: new Date(frontmatter.pubDate),
-          tags: frontmatter.tags || []
-        });
-      } catch (error) {
-        console.warn('Failed to load how-chilla-works.md:', error);
-      }
-
-      try {
-        const aiTradingPost = await import('../../../content/posts/ai-trading-algorithms-explained.md?raw');
-        const { frontmatter, content: markdownContent } = this.parseFrontmatter(aiTradingPost.default);
-        posts.push({
-          id: frontmatter.id,
-          slug: frontmatter.slug,
-          title: frontmatter.title,
-          description: frontmatter.description,
-          content: markdownContent,
-          author: frontmatter.author,
-          pubDate: new Date(frontmatter.pubDate),
-          tags: frontmatter.tags || []
-        });
-      } catch (error) {
-        console.warn('Failed to load ai-trading-algorithms-explained.md:', error);
-      }
-
-      // Sort by publication date (newest first)
-      posts.sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
-      
-      this.posts = posts;
-      return posts;
+      // Use the static data as our content source - this is simpler and more reliable
+      // The create-post script will automatically update this file
+      const { getAllBlogPosts } = await import('@/data/blog-posts');
+      this.posts = getAllBlogPosts();
+      return this.posts;
     } catch (error) {
       console.error('Failed to load blog posts:', error);
-      // Fallback to static data
-      const { getAllBlogPosts } = await import('@/data/blog-posts');
-      return getAllBlogPosts();
+      return [];
     }
   }
 
