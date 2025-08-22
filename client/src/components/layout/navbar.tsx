@@ -79,7 +79,7 @@ export default function Navbar() {
               Contact
             </a>
             <a
-              href="https://app.beaverlyai.com"
+              href="https://chilla.beaverlyai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
@@ -135,7 +135,7 @@ export default function Navbar() {
               Contact
             </a>
             <a
-              href="https://app.beaverlyai.com"
+              href="https://chilla.beaverlyai.com"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-cta"
