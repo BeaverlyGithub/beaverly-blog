@@ -47,7 +47,7 @@ export default function BlogHome() {
                 Insights into AI-powered wealth automation, personal wealth co-pilot, and the next generation of financial technology from the team at Beaverly.
               </p>
               <div className="hero-actions">
-                <a href="https://app.beaverlyai.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
+                <a href="https://chilla.beaverlyai.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
                   Start Chilling Now
                   <ArrowRight size={20} />
                 </a>
@@ -132,7 +132,7 @@ export default function BlogHome() {
                 </p>
                 <div className="flex gap-4 justify-center flex-wrap">
                   <a 
-                    href="https://app.beaverlyai.com" 
+                    href="https://chilla.beaverlyai.com" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary btn-large"
