@@ -58,34 +58,42 @@ export class ContentLoader {
     }
 
     try {
-      // In a real implementation, you'd dynamically import all .md files
-      // For now, we'll manually import the ones we have
-      const postModules = [
-        () => import('/content/posts/how-chilla-works.md?raw'),
-        () => import('/content/posts/ai-trading-algorithms-explained.md?raw'),
-      ];
-
+      // Import markdown files directly - this works better with Vite's build process
       const posts: BlogPost[] = [];
+      
+      // Import each markdown file directly
+      try {
+        const howChillaWorks = await import('/content/posts/how-chilla-works.md?raw');
+        const { frontmatter, content: markdownContent } = this.parseFrontmatter(howChillaWorks.default);
+        posts.push({
+          id: frontmatter.id,
+          slug: frontmatter.slug,
+          title: frontmatter.title,
+          description: frontmatter.description,
+          content: markdownContent,
+          author: frontmatter.author,
+          pubDate: new Date(frontmatter.pubDate),
+          tags: frontmatter.tags || []
+        });
+      } catch (error) {
+        console.warn('Failed to load how-chilla-works.md:', error);
+      }
 
-      for (const importPost of postModules) {
-        try {
-          const module = await importPost();
-          const content = module.default;
-          const { frontmatter, content: markdownContent } = this.parseFrontmatter(content);
-          
-          posts.push({
-            id: frontmatter.id,
-            slug: frontmatter.slug,
-            title: frontmatter.title,
-            description: frontmatter.description,
-            content: markdownContent,
-            author: frontmatter.author,
-            pubDate: new Date(frontmatter.pubDate),
-            tags: frontmatter.tags || []
-          });
-        } catch (error) {
-          console.warn('Failed to load blog post:', error);
-        }
+      try {
+        const aiTradingPost = await import('/content/posts/ai-trading-algorithms-explained.md?raw');
+        const { frontmatter, content: markdownContent } = this.parseFrontmatter(aiTradingPost.default);
+        posts.push({
+          id: frontmatter.id,
+          slug: frontmatter.slug,
+          title: frontmatter.title,
+          description: frontmatter.description,
+          content: markdownContent,
+          author: frontmatter.author,
+          pubDate: new Date(frontmatter.pubDate),
+          tags: frontmatter.tags || []
+        });
+      } catch (error) {
+        console.warn('Failed to load ai-trading-algorithms-explained.md:', error);
       }
 
       // Sort by publication date (newest first)
