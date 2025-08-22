@@ -30,7 +30,7 @@ export default function BlogHome() {
     <>
       <SEOHead
         title="Beaverly updates - AI Financial Co-Pilot Insights"
-        description="Official updates page from Beaverly®, the AI-powered financial co-pilot. Stay informed about our latest developments, research, and insights into AI powered automation."
+        description="Official updates page from Beaverly®, the autonomous execution infrastructure for wealth."
         url="https://blog.beaverlyai.com"
         keywords="chilla, beaverly, beaverly ai, beverly, AI trading, forex automation, MT5 bot, trading bot, chill with your money, financial co-pilot, forex trading, free vps, best investment, investment, best investment company, legit investment, safe investment, grow my money, stock trading, ai co-pilot"
       />
