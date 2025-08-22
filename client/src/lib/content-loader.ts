@@ -61,9 +61,9 @@ export class ContentLoader {
       // Import markdown files directly - this works better with Vite's build process
       const posts: BlogPost[] = [];
       
-      // Import each markdown file directly
+      // Import each markdown file directly using relative paths
       try {
-        const howChillaWorks = await import('/content/posts/how-chilla-works.md?raw');
+        const howChillaWorks = await import('../../../content/posts/how-chilla-works.md?raw');
         const { frontmatter, content: markdownContent } = this.parseFrontmatter(howChillaWorks.default);
         posts.push({
           id: frontmatter.id,
@@ -80,7 +80,7 @@ export class ContentLoader {
       }
 
       try {
-        const aiTradingPost = await import('/content/posts/ai-trading-algorithms-explained.md?raw');
+        const aiTradingPost = await import('../../../content/posts/ai-trading-algorithms-explained.md?raw');
         const { frontmatter, content: markdownContent } = this.parseFrontmatter(aiTradingPost.default);
         posts.push({
           id: frontmatter.id,
