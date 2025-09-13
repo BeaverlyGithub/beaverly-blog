@@ -123,5 +123,3 @@ This is not just my story; it's our story of building a freer, more inclusive fu
 
 — **Moses Olabode**  
 Founder & CEO/CTO, Beaverly Innovative Systems
-
-> **"Welcome to BEAVERLY®. Welcome to the CHILL side."**
