@@ -874,6 +874,28 @@
   text-decoration: underline;
 }
 
+.blog-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--accent-primary);
+  background: var(--bg-tertiary);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.blog-content blockquote p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.blog-content hr {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
 /* OpenAI-style video embeds */
 .blog-content .video-embed {
   margin: 2rem 0;

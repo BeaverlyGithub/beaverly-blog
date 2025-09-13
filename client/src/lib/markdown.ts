@@ -41,10 +41,12 @@ export function renderMarkdown(content: string): string {
       .replace(/^# (.+)$/gm, '<h1>$1</h1>')
       .replace(/^## (.+)$/gm, '<h2>$1</h2>')
       .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+      .replace(/^> (.+)$/gm, '<blockquote><p>$1</p></blockquote>')
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>')
       .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" loading="lazy" />')
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+      .replace(/---/g, '<hr>')
       .replace(/\n\n/g, '</p><p>')
       .replace(/^(.+)$/gm, '<p>$1</p>');
   }
