@@ -17,6 +17,7 @@ async function startServer() {
       server: {
         host: '0.0.0.0',
         port: port,
+        allowedHosts: true,
       },
       resolve: {
         alias: {

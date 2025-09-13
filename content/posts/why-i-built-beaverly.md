@@ -1,23 +1,24 @@
-import { BlogPost } from "@/types/schema";
+---
+id: "1"
+slug: "why-i-built-beaverly"
+title: "Why I Built BEAVERLY®"
+description: "From ghosted developers to global infrastructure - The raw, unfiltered story behind building BEAVERLY®, the autonomous execution infrastructure for wealth that's changing how people experience financial markets."
+author: "Moses Olabode"
+pubDate: "2025-01-15"
+tags: ["Founder Story", "AI Trading", "Fintech", "Entrepreneurship", "BEAVERLY", "CHILLA"]
+---
 
-// Static blog post data for deployment without backend
-export const staticBlogPosts: BlogPost[] = [
-  {
-    id: "1",
-    slug: "why-i-built-beaverly",
-    title: "Why I Built BEAVERLY®",
-    description: "From ghosted developers to global infrastructure - The raw, unfiltered story behind building BEAVERLY®, the autonomous execution infrastructure for wealth that's changing how people experience financial markets.",
-    content: `# Why I Built BEAVERLY®
+# Why I Built BEAVERLY®
 ## From ghosted developers to global infrastructure
 
-![Hero Image - Relaxing with Trading Technology](@assets/generated_images/Person_relaxing_with_trading_tech_e20abb04.png)
+![Hero Image - Relaxing with Trading Technology](/attached_assets/generated_images/Person_relaxing_with_trading_tech_e20abb04.png)
 
 I didn't build BEAVERLY® because I wanted to join the "AI startup" bandwagon. I built it because I was desperate. Desperate for freedom. Desperate for a system that didn't keep me chained to screens, stressed out by charts, and left behind by the tools that only seemed designed for a privileged few… with nothing but a MiFi, sleepless nights, and AI co-pilots as my partners.
 
 And honestly? I was broke.
 
-![Personal struggle photos](@assets/IMG_2533_1757777062401.JPEG)
-![More struggle photos](@assets/IMG_2536_1757777062402.JPEG)
+![Personal struggle photos](/attached_assets/IMG_2533_1757777062401.JPEG)
+![More struggle photos](/attached_assets/IMG_2536_1757777062402.JPEG)
 
 > **"Not 'budget tight' broke; sell-my-phone-four-times broke."**
 
@@ -29,7 +30,7 @@ So I turned to ChatGPT and Claude. Not as a gimmick, but as my partner. It was t
 
 ## The spark: augmentation, not replacement
 
-![Human AI Collaboration Diagram](@assets/generated_images/Human_AI_collaboration_diagram_8bd2fa87.png)
+![Human AI Collaboration Diagram](/attached_assets/generated_images/Human_AI_collaboration_diagram_8bd2fa87.png)
 
 I didn't set out to build a machine that replaces traders, wealth managers, or fintech platforms. That's not the dream of GenAI.
 
@@ -52,7 +53,7 @@ That might sound big, but it breaks down into two clear layers:
 
 ### CHILLA™: Your Wealth Co-Pilot
 
-![Chilla Interface Mockup](@assets/generated_images/Chilla_trading_interface_mockup_bf377fd7.png)
+![Chilla Interface Mockup](/attached_assets/generated_images/Chilla_trading_interface_mockup_bf377fd7.png)
 
 **CHILLA™**: your wealth co-pilot. Fully autonomous, yet approachable. It's designed to give everyday people a chill, accessible experience with the markets. Plug it in, step back, and let complexity fade away.
 
@@ -69,11 +70,11 @@ Together, they make BEAVERLY® not just another app, but a foundation; a system 
 
 ## From struggle to vision
 
-![Symbolic struggle image](@assets/generated_images/Late_night_vision_and_struggle_5638c672.png)
+![Symbolic struggle image](/attached_assets/generated_images/Late_night_vision_and_struggle_5638c672.png)
 
 When I was sitting there with no phone, just my MiFi and PC, epileptic power supply + 3am commits, wondering if this dream would ever become real, sleeping from 7am to 1pm daily for four months straight, I held on to one belief: **the markets should be for all of us, and I felt chosen to do it.**
 
-![Struggle meme](@assets/images_1757777062410.jfif)
+![Struggle meme](/attached_assets/images_1757777062410.jfif)
 
 Not just for the "pros" with their ten monitors. Not just for the privileged with wealth managers on call. Not just for the lucky few with access to advanced systems. Not just for the "financially literate" online gurus.
 
@@ -85,7 +86,7 @@ That's BEAVERLY®.
 
 ## Not a Solo Journey
 
-![Beaverly Founders](@assets/Beaverly_founders_1757777062410.png)
+![Beaverly Founders](/attached_assets/Beaverly_founders_1757777062410.png)
 *Moses Olabode (left), Kolawole Oyedeji (middle), God'sfavour Amaechi (right)*
 
 As much as I carried this stubborn dream, I wasn't alone.
@@ -118,24 +119,9 @@ Welcome to BEAVERLY®. Welcome to the CHILL side.
 
 This is not just my story; it's our story of building a freer, more inclusive future for everyone.
 
-![Moses Olabode Portrait](@assets/IMG_1135_1757777062403.JPEG)
+![Moses Olabode Portrait](/attached_assets/IMG_1135_1757777062403.JPEG)
 
 — **Moses Olabode**  
 Founder & CEO/CTO, Beaverly Innovative Systems
 
-> **"Welcome to BEAVERLY®. Welcome to the CHILL side."**`,
-    author: "Moses Olabode",
-    pubDate: new Date("2025-01-15"),
-    tags: ["Founder Story", "AI Trading", "Fintech", "Entrepreneurship", "BEAVERLY", "CHILLA"]
-  }
-];
-
-// Helper function to get all blog posts
-export const getAllBlogPosts = (): BlogPost[] => {
-  return staticBlogPosts.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
-};
-
-// Helper function to get a blog post by slug
-export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
-  return staticBlogPosts.find(post => post.slug === slug);
-};
+> **"Welcome to BEAVERLY®. Welcome to the CHILL side."**
