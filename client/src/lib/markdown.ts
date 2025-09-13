@@ -15,12 +15,12 @@ async function loadDependencies() {
     if (marked) {
       marked.use({
         renderer: {
-          image(href: string | null, title: string | null, text: string) {
-            // Handle null href values
-            if (!href) return '';
+          image(href: any, title: any, text: string) {
+            // Handle null, undefined, or non-string href values
+            if (!href || typeof href !== 'string') return '';
             // Ensure image paths are properly resolved
             const imagePath = href.startsWith('/') ? href : `/${href}`;
-            const titleAttr = title ? ` title="${title}"` : '';
+            const titleAttr = title && typeof title === 'string' ? ` title="${title}"` : '';
             return `<img src="${imagePath}" alt="${text}"${titleAttr} loading="lazy" />`;
           }
         }
