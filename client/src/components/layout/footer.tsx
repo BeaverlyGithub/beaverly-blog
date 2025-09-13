@@ -44,13 +44,6 @@ export default function Footer() {
                 Chilla
               </a>
               <a
-                href="https://beaverlyai.com/paca"
-                className="block text-gray-400 hover:text-white transition-colors"
-                data-testid="footer-paca"
-              >
-                Paca
-              </a>
-              <a
                 href="https://beaverlyai.com/m-ii"
                 className="block text-gray-400 hover:text-white transition-colors"
                 data-testid="footer-mii"
@@ -178,7 +171,7 @@ export default function Footer() {
             rights reserved.
           </p>
           <p className="text-xs text-gray-500">
-            Chilla™, M-II™ and Paca™ are trademarks of Beaverly
+            Chilla™ and M-II™ are trademarks of Beaverly
             <span className="text-sm">®</span> Innovative Systems Ltd.
           </p>
           <p className="text-xs text-gray-500 leading-relaxed max-w-4xl mx-auto">

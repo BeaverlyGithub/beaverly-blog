@@ -134,9 +134,9 @@ export default function BlogPostPage() {
         <footer className="section border-t border-primary">
           <div className="container-narrow">
             <div className="text-center fade-in-up">
-              <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Investing?</h3>
+              <h3 className="text-2xl font-bold mb-4">Ready to Automate And Scale?</h3>
               <p className="text-secondary mb-8">
-                Discover how Beaverly's AI-powered ecosystem can automate your trading and optimize your portfolio.
+                Discover how Beaverly's AI-powered ecosystem can automate and help you scale effortlessly.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <a 
