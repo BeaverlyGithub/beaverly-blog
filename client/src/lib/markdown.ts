@@ -15,7 +15,9 @@ async function loadDependencies() {
     if (marked) {
       marked.use({
         renderer: {
-          image(href: string, title: string, text: string) {
+          image(href: string | null, title: string | null, text: string) {
+            // Handle null href values
+            if (!href) return '';
             // Ensure image paths are properly resolved
             const imagePath = href.startsWith('/') ? href : `/${href}`;
             const titleAttr = title ? ` title="${title}"` : '';
