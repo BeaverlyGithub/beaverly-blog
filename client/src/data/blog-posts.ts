@@ -52,8 +52,8 @@ That might sound big, but it breaks down into two clear layers:
 
 ### CHILLA™: Your Wealth Co-Pilot
 
-![Chilla Dashboard - Chart Mode](https://blog.beaverlyai.com/Screenshot%202025-09-13%20164449_1757788816939.JPEG)
-![Chilla Dashboard - Portfolio View](https://blog.beaverlyai.com/Screenshot%202025-09-13%20192752_1757788816938.JPEG)
+![Chilla Dashboard - Chart Mode](https://blog.beaverlyai.com/Screenshot%25202025-09-13%2520164449_1757788816939.JPEG)
+![Chilla Dashboard - Portfolio View](https://blog.beaverlyai.com/Screenshot%25202025-09-13%2520192752_1757788816938.JPEG)
 
 **CHILLA™**: your wealth co-pilot. Fully autonomous, yet approachable. It's designed to give everyday people a chill, accessible experience with the markets. Plug it in, step back, and let complexity fade away.
 
