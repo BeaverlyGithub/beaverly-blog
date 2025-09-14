@@ -63,6 +63,8 @@ That might sound big, but it breaks down into two clear layers:
 CHILLA™ is for *everyone*.
 M-II™ is for the institutions powering them.
 
+And here’s the key difference: **Chilla isn’t another risky trading bot.** It connects safely to your broker, never touches your funds, and never promises ROI. It’s automation with boundaries — the chill way to let AI handle the boring, repeatable work while you live.
+
 Together, they make BEAVERLY® not just another app, but a foundation; a system that augments humans and expands prosperity in the online financial markets.
 
 ---
