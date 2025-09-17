@@ -78,7 +78,7 @@ Together, they make BEAVERLY® not just another app, but a foundation; a system 
 When I was sitting there with no phone, just my MiFi and PC, epileptic power supply + 3am commits, wondering if this dream would ever become real, sleeping from 7am to 1pm daily for four months straight, I held on to one belief: **the markets should be for all of us, and I felt chosen to do it.**
 
 > *The irony is, building what became Beaverly wasn’t supposed to be a one-man job. By every industry estimate, a build like this would normally take a team that looks like this:*
->
+
 > * *1 senior backend engineer for execution infra & broker integrations*
 > * *1 quant / quant developer for strategies and backtesting*
 > * *1 frontend/product engineer for dashboard and onboarding*
@@ -86,7 +86,7 @@ When I was sitting there with no phone, just my MiFi and PC, epileptic power sup
 > * *DevOps / SRE support, at least part-time*
 > * *And a data scientist to even begin exploring adaptive models*
 > * *Plus a veteran security/compliance lead to pass audits (that’s where Kolawole came in).*
->
+
 > *Instead? It was just me. I wasn’t even a developer when I started. I had to become the backend, the frontend, the quant, the product manager, and the DevOps. I compressed an entire team into one stubborn human — at the cost of my health. At one point, I fell sick for two weeks from the grind. But I kept pushing. And by the time Kolawole locked down our security and Godsfavour kept the business side alive, Beaverly had gone from a desperate idea to a working, audited system.*
 
 
