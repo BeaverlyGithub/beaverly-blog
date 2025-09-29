@@ -3,7 +3,7 @@
 id: "2"
 slug: "how-chilla-works"
 title: "How Chilla Works"
-description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly grows your wealth in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible."
+description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly works for you in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible."
 author: "Moses Olabode"
 pubDate: "2025-01-16"
 tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERLY", "M-II"]
@@ -13,13 +13,13 @@ tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERL
 
 ![Chilla AI Wealth Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
 
-Chilla is an **AI-powered wealth co-pilot** running on an autonomous wealth infrastructure called **M-II**. It's designed to quietly grow your wealth in the background, letting you focus on life while it handles the market.
+Chilla is an **AI-powered wealth co-pilot** running on an autonomous wealth infrastructure called **M-II**. It's designed to quietly work for you in the background, letting you focus on life while it handles the market.
 
 ## Getting Started
 
 When you create a Chilla account and sign in:
 
-1. **Connect your broker** – Pick from the available options, or connect an account if you already have one.
+1. **Connect your broker** – Create from the available options, or connect an existing account with that broker if you already have one.
 2. **Activate Chilla** – Once connected, Chilla runs whether you're logged in or not.
 
 Chilla works **24/7 in the background**, so you never have to worry about monitoring it; unless you manually disconnect it.
@@ -56,7 +56,7 @@ Chilla is more than a trading bot; it's a **long-term companion for your financi
 
 All you need to do is **connect your account** and let Chilla do its thing. Watch its execution footprints over **3–6 months**, and you'll start seeing how it works steadily in the background.
 
-Chilla is here for **the long game**, helping you improve your life experiences while quietly growing your wealth. You just chill. Chilla works.
+Chilla is here for **the long game**, helping you improve your life experiences while quietly working for you. You just chill. Chilla works.
 
 ![You Chill, AI Works - Relaxed Lifestyle with AI Automation](/images/person_relaxing_ai_h_9e22ad08.jpg)
 
