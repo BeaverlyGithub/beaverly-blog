@@ -11,6 +11,8 @@ tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERL
 
 # How Chilla Works
 
+![Chilla AI Co-Pilot - Futuristic AI in Financial Setting](/images/ai_artificial_intell_77a14412.jpg)
+
 Chilla is an **AI-powered wealth co-pilot** running on an autonomous wealth infrastructure called **M-II**. It's designed to quietly grow your wealth in the background, letting you focus on life while it handles the market.
 
 ## Getting Started
@@ -22,7 +24,11 @@ When you create a Chilla account and sign in:
 
 Chilla works **24/7 in the background**, so you never have to worry about monitoring it; unless you manually disconnect it.
 
+![Autonomous Trading - AI Working in Background](/images/automated_trading_ba_d1b161bf.jpg)
+
 ## More Than a Trading Bot
+
+![Intelligent AI vs Traditional Trading Bot](/images/intelligent_trading__410f2f3a.jpg)
 
 Chilla is often called a trading bot; but it's actually much more than that.
 
@@ -32,6 +38,8 @@ Chilla is often called a trading bot; but it's actually much more than that.
 Because it's a tool, **we don't promise returns or performance**. Chilla is loyal and intentional: you authorize it to work, and it does, until you cancel.
 
 ## How Chilla Trades
+
+![Risk Management and Safe Trading](/images/risk_management_fina_07012a23.jpg)
 
 Chilla is **picky and intentional**. You won't see dozens of trades every day. On average, you might see **1–4 trades/orders per month**, depending on the market you allow Chilla to handle. It's not flashy, but it's dependable.
 
@@ -49,6 +57,8 @@ Chilla is more than a trading bot; it's a **long-term companion for your financi
 All you need to do is **connect your account** and let Chilla do its thing. Watch its execution footprints over **3–6 months**, and you'll start seeing how it works steadily in the background.
 
 Chilla is here for **the long game**, helping you improve your life experiences while quietly growing your wealth. You just chill. Chilla works.
+
+![Long-term Investment - Relaxing While AI Works](/images/relaxed_person_with__3e945985.jpg)
 
 ---
 
