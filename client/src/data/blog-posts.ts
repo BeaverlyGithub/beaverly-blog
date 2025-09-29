@@ -9,7 +9,7 @@ export const staticBlogPosts: BlogPost[] = [
     description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly grows your wealth in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible.",
     content: `# How Chilla Works
 
-![Chilla - Your AI-Powered Wealth Co-Pilot](/images/ai_digital_assistant_3a3a0ae5.jpg)
+![Chilla AI Wealth Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
 
 Chilla is an **AI-powered wealth co-pilot** running on an autonomous wealth infrastructure called **M-II**. It's designed to quietly grow your wealth in the background, letting you focus on life while it handles the market.
 
@@ -22,11 +22,11 @@ When you create a Chilla account and sign in:
 
 Chilla works **24/7 in the background**, so you never have to worry about monitoring it; unless you manually disconnect it.
 
-![Automated Trading System - Continuous 24/7 Operation](/images/automated_trading_sy_3dca9a76.jpg)
+![AI Brain Network - Continuous Automation and Data Streams](/images/ai_brain_network_aut_b06577d0.jpg)
 
 ## More Than a Trading Bot
 
-![Smart AI Co-Pilot vs Simple Trading Bot](/images/smart_ai_vs_simple_b_84fbba2e.jpg)
+![AI Co-Pilot vs Simple Trading Bot - Intelligence Comparison](/images/ai_vs_robot_comparis_732ed252.jpg)
 
 Chilla is often called a trading bot; but it's actually much more than that.
 
@@ -37,7 +37,7 @@ Because it's a tool, **we don't promise returns or performance**. Chilla is loya
 
 ## How Chilla Trades
 
-![Risk Management and Trading Safety](/images/financial_risk_manag_bcbb8a7f.jpg)
+![AI Risk Evaluation - Safe and Intentional Trading](/images/ai_risk_evaluation_f_51941c2b.jpg)
 
 Chilla is **picky and intentional**. You won't see dozens of trades every day. On average, you might see **1–4 trades/orders per month**, depending on the market you allow Chilla to handle. It's not flashy, but it's dependable.
 
@@ -56,7 +56,7 @@ All you need to do is **connect your account** and let Chilla do its thing. Watc
 
 Chilla is here for **the long game**, helping you improve your life experiences while quietly growing your wealth. You just chill. Chilla works.
 
-![Relaxing While AI Handles Your Wealth](/images/person_relaxing_whil_8fc69866.jpg)
+![You Chill, AI Works - Relaxed Lifestyle with AI Automation](/images/person_relaxing_ai_h_9e22ad08.jpg)
 
 ---
 
