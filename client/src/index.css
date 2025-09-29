@@ -521,6 +521,17 @@
     border-radius: var(--radius-lg);
     margin: 2rem 0;
     box-shadow: var(--shadow-md);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+  }
+
+  .blog-content img[loading="lazy"] {
+    opacity: 0;
+  }
+
+  .blog-content img.loaded {
+    opacity: 1;
   }
 
   .blog-content code {

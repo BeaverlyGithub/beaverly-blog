@@ -126,6 +126,15 @@ export default function BlogPostPage() {
               className="blog-content fade-in-up"
               dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }}
               data-testid="post-content"
+              onLoad={() => {
+                // Trigger image loading after content is rendered
+                const images = document.querySelectorAll('.blog-content img');
+                images.forEach((img: HTMLImageElement) => {
+                  if (img.complete) {
+                    img.style.opacity = '1';
+                  }
+                });
+              }}
             />
           </div>
         </article>
