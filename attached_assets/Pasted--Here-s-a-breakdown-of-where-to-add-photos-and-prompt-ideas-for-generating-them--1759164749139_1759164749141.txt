@@ -1,0 +1,71 @@
+ Here’s a breakdown of **where to add photos** and **prompt ideas** for generating them 
+
+---
+
+### **1. Hero Image (Top of the Blog)**
+
+* **Purpose:** Grab attention; visually explain “Chilla as an AI wealth co-pilot.”
+* **Prompt Idea:**
+
+  ```
+  Futuristic AI assistant in a financial setting, glowing interface with graphs and charts floating, calm and modern aesthetic, subtle neon highlights, digital co-pilot concept, sleek professional style
+  ```
+* **Placement:** Right under the title “How Chilla Works.”
+
+---
+
+
+
+---
+
+### **3. Chilla Working in Background / Autonomous Trading**
+
+* **Purpose:** Illustrate 24/7 background operation, “Chilla quietly growing wealth.”
+* **Prompt Idea:**
+
+  ```
+  Abstract AI brain working in the background with glowing nodes and data streams, financial symbols floating around, calm futuristic colors, represents continuous smart automation
+  ```
+* **Placement:** Around “Chilla runs 24/7 in the background…”
+
+---
+
+### **4. Not a Trading Bot Section**
+
+* **Purpose:** Highlight that Chilla is smarter than a normal trading bot.
+* **Prompt Idea:**
+
+  ```
+  Side-by-side comparison: simple trading bot vs intelligent AI co-pilot, one side dull charts, other side glowing AI network managing multiple accounts, futuristic UI
+  ```
+* **Placement:** Next to “Chilla is a trading bot but actually not a trading bot…”
+
+---
+
+### **5. Picky and Intentional Trading / Risk Management**
+
+* **Purpose:** Explain careful, low-volume trading and risk safety.
+* **Prompt Idea:**
+
+  ```
+  Calm futuristic AI evaluating financial risks, charts showing small but steady trades, glowing security shields, represents safe and intentional trading
+  ```
+* **Placement:** Near “Chilla is trained to be very picky and intentional…”
+
+---
+
+### **6. Long-term Game / Chill Concept**
+
+* **Purpose:** Show lifestyle aspect: user chilling while AI works.
+* **Prompt Idea:**
+
+  ```
+  Relaxed person lounging with tablet or coffee, futuristic AI hologram working in background, subtle glowing interface with charts, calm and peaceful aesthetic, “you chill, AI works”
+  ```
+* **Placement:** At the end near “Chilla is here for the long term game…”
+
+---
+
+💡 **Tip:** Keep images **consistent in style**—futuristic, calm, neon/glow accents, modern fintech aesthetic. This creates a coherent, branded feel throughout the blog.
+
+
