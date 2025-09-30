@@ -1,15 +1,15 @@
 
 ---
 id: "2"
-slug: "how-chilla-works"
-title: "How Chilla Works"
+slug: "how-does-chilla-work"
+title: "How Does Chilla Work?"
 description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly works for you in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible."
 author: "Moses Olabode"
 pubDate: "2025-01-16"
 tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERLY", "M-II"]
 ---
 
-# How Chilla Works
+# How Does Chilla Work?
 
 ![Chilla AI Wealth Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
 
@@ -30,12 +30,15 @@ Chilla works **24/7 in the background**, so you never have to worry about monito
 
 ![AI Co-Pilot vs Simple Trading Bot - Intelligence Comparison](/images/ai_vs_robot_comparis_732ed252.jpg)
 
-Chilla is often called a trading bot; but it's actually much more than that.
+Chilla is often called a trading bot, but it’s actually much more than that.
 
 * **A traditional trading bot** tells you returns and performance.
-* **Chilla** is a super-intelligent decision maker, running multiple strategies across different market conditions, and can connect to multiple brokers simultaneously on paid tiers.
+* **Chilla** is a super-intelligent decision maker, running multiple strategies across different market conditions and connecting to multiple brokers simultaneously on paid tiers.
 
-Because it's a tool, **we don't promise returns or performance**. Chilla is loyal and intentional: you authorize it to work, and it does, until you cancel.
+Chilla delivers personalized experiences across markets and brokers, which means it **does not promise returns or performance**. You authorize it to work, and it does; faithfully and continuously, until you cancel. 
+
+We do, however, disclose average backtest performance for each market Chilla supports on our website. This gives you an overview of expected outcomes, but real-world results depend on your broker and market conditions.
+
 
 ## How Chilla Trades
 
@@ -52,6 +55,7 @@ Chilla is more than a trading bot; it's a **long-term companion for your financi
 * Focuses on **steady growth** rather than short-term excitement.
 * Operates **autonomously**, freeing you from constant monitoring.
 * Designed for **safety and intentionality**, reducing unnecessary risk.
+* Let's you connect any broker, anywhere, anytime.
 * Lets you **Chill** while it quietly executes its strategies.
 
 All you need to do is **connect your account** and let Chilla do its thing. Watch its execution footprints over **3–6 months**, and you'll start seeing how it works steadily in the background.
