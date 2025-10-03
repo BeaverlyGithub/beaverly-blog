@@ -9,9 +9,6 @@ title: "Is AI Trading Safe?",
 description: "Explore the truth about AI trading and why Chilla is built differently. Learn how Beaverly’s autonomous infrastructure keeps your co-pilot safe, adaptive, and working for you in the background while you focus on life.",
 content: `# Is AI Trading Safe?
 
-
-# IS AI TRADING SAFE?
-
 *Exploring the myths, risks, and how Chilla makes AI safe for everyday people*
 
 Artificial Intelligence is reshaping how people interact with markets. From automated execution to adaptive strategies, AI-powered tools promise efficiency, consistency, and less stress. But the big question is: **Is AI trading really safe?**
