@@ -54,13 +54,11 @@ export default function BlogPostPage() {
   return (
     <>
       <SEOHead
-  title={`${post.title} | Beaverly Blog - Chilla AI Co-Pilot`}
-  description={post.description}
-  url={`https://blog.beaverlyai.com/blog/${post.slug}`}
-  image={post.image || "/beaverly_lodo_1754452037836.png"}  // ✅ add OG/Twitter preview image
-  keywords={post.tags?.join(", ") || "chilla, beaverly, ai co-pilot"}
-/>
-
+        title={`${post.title} | Beaverly Blog - Chilla AI Co-Pilot`}
+        description={post.description}
+        url={`https://blog.beaverlyai.com/blog/${post.slug}`}
+        keywords="chilla, beaverly, beaverly ai, AI trading, forex automation, MT5 bot, trading bot, financial co-pilot, forex trading, investment, stock trading, ai co-pilot"
+      />
       
       <main className="min-h-screen" data-testid="blog-post">
         {/* Back Navigation */}
