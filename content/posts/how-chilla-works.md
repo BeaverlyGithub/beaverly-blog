@@ -5,8 +5,8 @@ slug: "how-does-chilla-work"
 title: "How Does Chilla Work?"
 description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly works for you in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible."
 author: "Moses Olabode"
-pubDate: "2025-01-16"
-tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERLY", "M-II"]
+pubDate: "2025-09-29"
+tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Wealth", "BEAVERLY", "M-II"]
 ---
 
 # How Does Chilla Work?
