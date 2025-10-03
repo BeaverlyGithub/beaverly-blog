@@ -11,6 +11,8 @@ content: `# Is AI Trading Safe?
 
 *Exploring the myths, risks, and how Chilla makes AI safe for everyday people*
 
+![AI co pilot image](https://blog.beaverlyai.com/generated_images/ai_wealth_copilot.png)
+
 Artificial Intelligence is reshaping how people interact with markets. From automated execution to adaptive strategies, AI-powered tools promise efficiency, consistency, and less stress. But the big question is: **Is AI trading really safe?**
 
 The truth isn’t simple. Let’s explore the realities, the risks, and why Beaverly’s approach with **Chilla** changes the conversation.
@@ -31,6 +33,8 @@ Think of it like an autopilot on a plane. The pilot still oversees the journey, 
 
 ## The Risks Most Don’t Talk About
 
+![Reliable co pilot image](https://blog.beaverlyai.com/generated_images/reliable_ai_wealth_copilot.png)
+
 AI trading isn’t automatically safe. Many systems on the market fall short because:
 
 * **Overfitting** – Trained too much on the past, they break in the future.
@@ -43,6 +47,8 @@ It’s like comparing a toy drone to a commercial airliner. One might work in ca
 
 
 ## Beaverly’s Approach: Safety by Design
+
+![Reliable co pilot image](https://blog.beaverlyai.com/generated_images/tm.png)
 
 With **Chilla**, Beaverly took a different path. Instead of chasing hype, we built for resilience and clarity from the ground up.
 
@@ -75,6 +81,8 @@ That’s what makes Beaverly’s Chilla different — a trusted co-pilot designe
 ---
 
 ### Final Word
+
+![People living chilled image](https://blog.beaverlyai.com/generated_images/people_living_a_chilled_life_with_ai.png)
 
 AI doesn’t have to be a gamble. It doesn’t have to feel risky. With Chilla, the work is handled in the background so you can stay focused on the bigger picture.
 
