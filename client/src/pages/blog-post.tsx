@@ -6,6 +6,7 @@ import { renderMarkdown } from "@/lib/markdown";
 import SEOHead from "@/components/seo-head";
 import { apiClient } from "@/lib/api";
 import { calculateReadingTime } from "@/lib/reading-time";
+import { useEffect } from "react";
 
 export default function BlogPostPage() {
   const { slug } = useParams();
@@ -15,6 +16,22 @@ export default function BlogPostPage() {
     queryFn: () => apiClient.getBlogPost(slug!),
     enabled: !!slug,
   });
+
+  useEffect(() => {
+  if (!post?.content) return;
+
+  const images = document.querySelectorAll<HTMLImageElement>('.blog-content img');
+  images.forEach((img) => {
+    if (img.complete) {
+      img.style.opacity = '1';
+    } else {
+      img.onload = () => {
+        img.style.opacity = '1';
+      };
+    }
+  });
+}, [post?.content]);
+
 
   if (isLoading) {
     return (
@@ -126,15 +143,6 @@ export default function BlogPostPage() {
               className="blog-content fade-in-up"
               dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }}
               data-testid="post-content"
-              onLoad={() => {
-                // Trigger image loading after content is rendered
-                const images = document.querySelectorAll('.blog-content img');
-                images.forEach((img: HTMLImageElement) => {
-                  if (img.complete) {
-                    img.style.opacity = '1';
-                  }
-                });
-              }}
             />
           </div>
         </article>
