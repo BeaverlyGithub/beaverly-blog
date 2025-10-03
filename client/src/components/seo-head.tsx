@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import Head from "next/head";
 
 interface SEOHeadProps {
   title: string;
@@ -9,84 +9,31 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({ title, description, url, image, keywords }: SEOHeadProps) {
-  useEffect(() => {
-    // Update title
-    document.title = title;
+  const siteName = "Beaverly Blog";
+  const fullTitle = `${title} | ${siteName}`;
 
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
+  return (
+    <Head>
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
 
-    // Update meta keywords
-    if (keywords) {
-      let metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (!metaKeywords) {
-        metaKeywords = document.createElement('meta');
-        metaKeywords.setAttribute('name', 'keywords');
-        document.head.appendChild(metaKeywords);
-      }
-      metaKeywords.setAttribute('content', keywords);
-    }
+      {/* Open Graph */}
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="article" />
+      <meta property="og:site_name" content={siteName} />
+      {url && <meta property="og:url" content={url} />}
+      <meta property="og:image" content={image || "/default-cover.jpg"} />
 
-    // Update Open Graph tags
-    const updateMetaProperty = (property: string, content: string) => {
-      let meta = document.querySelector(`meta[property="${property}"]`);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute('property', property);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute('content', content);
-    };
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image || "/default-cover.jpg"} />
 
-    updateMetaProperty('og:title', title);
-    updateMetaProperty('og:description', description);
-    updateMetaProperty('og:type', 'website');
-    updateMetaProperty('og:site_name', 'Beaverly Blog');
-    
-    if (url) {
-      updateMetaProperty('og:url', url);
-    }
-
-    if (image) {
-      updateMetaProperty('og:image', image);
-    }
-
-    // Update Twitter Card tags
-    const updateTwitterMeta = (name: string, content: string) => {
-      let meta = document.querySelector(`meta[name="${name}"]`);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute('name', name);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute('content', content);
-    };
-
-    updateTwitterMeta('twitter:card', 'summary_large_image');
-    updateTwitterMeta('twitter:title', title);
-    updateTwitterMeta('twitter:description', description);
-
-    if (image) {
-      updateTwitterMeta('twitter:image', image);
-    }
-
-    // Update canonical URL
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (url) {
-      if (!canonical) {
-        canonical = document.createElement('link');
-        canonical.setAttribute('rel', 'canonical');
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute('href', url);
-    }
-  }, [title, description, url, image, keywords]);
-
-  return null;
+      {/* Canonical */}
+      {url && <link rel="canonical" href={url} />}
+    </Head>
+  );
 }
