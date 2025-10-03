@@ -4,7 +4,7 @@ slug: "why-i-built-beaverly"
 title: "Why I Built BEAVERLY®"
 description: "From ghosted developers to global infrastructure - The raw, unfiltered story behind building BEAVERLY®, the autonomous execution infrastructure for wealth that's changing how people experience financial markets."
 author: "Moses Olabode"
-pubDate: "2025-01-15"
+pubDate: "2025-09-15"
 tags: ["Founder Story", "AI Trading", "Fintech", "Entrepreneurship", "BEAVERLY", "CHILLA"]
 ---
 
