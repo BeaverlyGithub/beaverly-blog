@@ -3,10 +3,20 @@ import { BlogPost } from "@/types/schema";
 // Static blog post data for deployment without backend
 export const staticBlogPosts: BlogPost[] = [
   {
+    id: "4",
+    slug: "the-plug-and-chill-life",
+    title: "The Plug & Chill Life: Market Participation Without the Burnout",
+    description: "Discover how the plug & chill approach to market participation is changing the game. Set your instructions, step back, and let disciplined automation handle the rest while you focus on living.",
+    content: `See content/posts/the-plug-and-chill-life.md for full content`,
+    author: "Moses Olabode",
+    pubDate: new Date("2025-11-23"),
+    tags: ["CHILLA", "Lifestyle", "Execution Infrastructure", "Automation", "BEAVERLY"]
+  },
+  {
 id: "3",
 slug: "is-ai-trading-safe",
-title: "Is AI Trading Safe?",
-description: "Explore the truth about AI trading and why Chilla is built differently. Learn how Beaverly’s autonomous infrastructure keeps your co-pilot safe, adaptive, and working for you in the background while you focus on life.",
+title: "Is AI Execution Safe?",
+description: "Explore the truth about AI-powered execution and why Chilla is built differently. Learn how Beaverly's autonomous execution infrastructure keeps your instructions running safely while you focus on life.",
 content: `# Is AI Trading Safe?
 
 *Exploring the myths, risks, and how Chilla makes AI safe for everyday people*
@@ -94,13 +104,13 @@ Because in the end, life should feel effortless.
 **Ready to start your wealth automation journey?** [Experience Chilla](https://chilla.beaverlyai.com)`,
     author: "Moses Olabode",
     pubDate: new Date("2025-10-03"),
-    tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERLY", "M-II"]
+    tags: ["CHILLA", "Execution Infrastructure", "Market Co-Pilot", "Autonomous Execution", "BEAVERLY", "M-II"]
   }, 
   {
     id: "2",
     slug: "how-does-chilla-work",
     title: "How Does Chilla Work?",
-    description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly works for you in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible.",
+    description: "Discover how Chilla, your market co-pilot, automates your execution instructions in the background while you focus on life. Learn about the autonomous execution infrastructure that makes it all possible.",
     content: `# How Does Chilla Work?
 
 ![Chilla AI Wealth Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
@@ -160,13 +170,13 @@ Chilla is here for **the long game**, helping you improve your life experiences 
 **Ready to start your wealth automation journey?** [Experience Chilla](https://chilla.beaverlyai.com)`,
     author: "Moses Olabode",
     pubDate: new Date("2025-09-29"),
-    tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Trading", "BEAVERLY", "M-II"]
+    tags: ["CHILLA", "Execution Infrastructure", "Market Co-Pilot", "Autonomous Execution", "BEAVERLY", "M-II"]
   },
   {
     id: "1",
     slug: "why-i-built-beaverly",
     title: "Why I Built BEAVERLY®",
-    description: "From ghosted developers to global infrastructure - The raw, unfiltered story behind building BEAVERLY®, the autonomous execution infrastructure for wealth that's changing how people experience financial markets.",
+    description: "From ghosted developers to global infrastructure - The raw, unfiltered story behind building BEAVERLY®, the autonomous execution infrastructure that's changing how people participate in financial markets.",
     content: `# Why I Built BEAVERLY®
 ## From ghosted developers to global infrastructure
 
@@ -303,7 +313,7 @@ Founder & CEO/CTO, Beaverly Innovative Systems
 > **"Welcome to BEAVERLY®. Welcome to the CHILL side."**`,
     author: "Moses Olabode",
     pubDate: new Date("2025-09-15"),
-    tags: ["Founder Story", "AI Trading", "Fintech", "Entrepreneurship", "BEAVERLY", "CHILLA"]
+    tags: ["Founder Story", "Execution Infrastructure", "Fintech", "Entrepreneurship", "BEAVERLY", "CHILLA"]
   }
 ];
 

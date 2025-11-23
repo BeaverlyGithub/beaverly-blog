@@ -3,64 +3,66 @@
 id: "2"
 slug: "how-does-chilla-work"
 title: "How Does Chilla Work?"
-description: "Discover how Chilla, your AI-powered wealth co-pilot, quietly works for you in the background while you focus on life. Learn about the autonomous infrastructure that makes it all possible."
+description: "Discover how Chilla, your market co-pilot, automates your instructions in the background while you focus on life. Learn about the intelligent automation infrastructure that makes it all possible."
 author: "Moses Olabode"
 pubDate: "2025-09-29"
-tags: ["CHILLA", "AI Trading", "Wealth Co-Pilot", "Autonomous Wealth", "BEAVERLY", "M-II"]
+tags: ["CHILLA", "Automation Infrastructure", "Market Co-Pilot", "Automated Instructions", "BEAVERLY", "M-II"]
 ---
 
 # How Does Chilla Work?
 
-![Chilla AI Wealth Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
+![Chilla AI Market Co-Pilot - Futuristic Financial Interface](/images/ai_hologram_financia_8c8d34d1.jpg)
 
-Chilla is an **AI-powered wealth co-pilot** running on an autonomous wealth infrastructure called **M-II**. It's designed to quietly work for you in the background, letting you focus on life while it handles the market.
+Chilla is your **market co-pilot** running on an intelligent automation infrastructure called **M-II**. It's designed to quietly automate your instructions in the background, letting you focus on life while it handles automation with discipline.
 
 ## Getting Started
 
 When you create a Chilla account and sign in:
 
-1. **Connect your broker** – Create from the available options, or connect an existing account with that broker if you already have one.
-2. **Activate Chilla** – Once connected, Chilla runs whether you're logged in or not.
+1. **Connect your broker** – Securely link your broker account (like Deriv, Binance, or others).
+2. **Set your instructions** – Choose your automation behaviour, pick your markets, and set your risk boundaries.
+3. **Activate** – Once you authorize, Chilla automates within your instructions whether you're logged in or not.
 
-Chilla works **24/7 in the background**, so you never have to worry about monitoring it; unless you manually disconnect it.
+Chilla works **24/7 in the background**, automating your instructions with zero emotional interference—until you pause or revoke.
 
 ![AI Brain Network - Continuous Automation and Data Streams](/images/ai_brain_network_aut_b06577d0.jpg)
 
-## More Than a Trading Bot
+## Your Instructions. Chilla's Automation.
 
 ![AI Co-Pilot vs Simple Trading Bot - Intelligence Comparison](/images/ai_vs_robot_comparis_732ed252.jpg)
 
-Chilla is often called a trading bot, but it’s actually much more than that.
+Chilla isn't a traditional trading bot that makes decisions for you. It's an **automation co-pilot** that automates within your boundaries.
 
-* **A traditional trading bot** tells you returns and performance.
-* **Chilla** is a super-intelligent decision maker, running multiple strategies across different market conditions and connecting to multiple brokers simultaneously on paid tiers.
+* **You decide**: Pick your automation behaviour, select your markets, set your risk cap.
+* **Chilla automates**: Monitors 24/7, automates within your instructions with zero emotion or bias.
+* **You stay in control**: Pause, adjust, or revoke anytime. Your funds stay in your broker account—always.
 
-Chilla delivers personalized experiences across markets and brokers, which means it **does not promise returns or performance**. You authorize it to work, and it does; faithfully and continuously, until you cancel. 
+Chilla doesn't recommend strategies or promise outcomes. It simply automates what you instruct, faithfully and continuously, across multiple markets and brokers (on paid tiers).
 
-We do, however, disclose average backtest performance for each market Chilla supports on our website. This gives you an overview of expected outcomes, but real-world results depend on your broker and market conditions.
+We share temperament history for each behaviour in-app—not as guarantees, but as transparency. Real results depend on your broker, market conditions, and the instructions you set.
 
 
-## How Chilla Trades
+## How Chilla Automates Intelligently
 
-![AI Risk Evaluation - Safe and Intentional Trading](/images/ai_risk_evaluation_f_51941c2b.jpg)
+![AI Risk Evaluation - Safe and Intentional Execution](/images/ai_risk_evaluation_f_51941c2b.jpg)
 
-Chilla is **picky and intentional**. You won't see dozens of trades every day. On average, you might see **1–4 trades/orders per month**, depending on the market you allow Chilla to handle. It's not flashy, but it's dependable.
+Chilla is **disciplined**. It waits for the right pattern match within your chosen behaviour.
 
-We've engineered Chilla to **handle risk better than humans can**. You might have a few losing trades here and there; that's just market randomness, not a reflection of Chilla's intelligence.
+Chilla follows your risk boundaries strictly. Losses happen—markets are unpredictable—but Chilla won't override your caps or chase hype. It automates within the rules you set, period.
 
 ## Why Chilla is Different
 
-Chilla is more than a trading bot; it's a **long-term companion for your financial journey**:
+Chilla is built as an **automation infrastructure**, not a decision-making platform:
 
-* Focuses on **steady growth** rather than short-term excitement.
-* Operates **autonomously**, freeing you from constant monitoring.
-* Designed for **safety and intentionality**, reducing unnecessary risk.
-* Let's you connect any broker, anywhere, anytime.
-* Lets you **Chill** while it quietly executes its strategies.
+* **You remain in control**: All behaviours, markets, and risk caps are set by you.
+* **Chilla automates with discipline**: No emotional pressure, no bias, no FOMO.
+* **Broker-agnostic**: Connect Deriv, Binance, or other brokers. Your funds never leave your account.
+* **24/7 monitoring**: Chilla doesn't sleep, so you can.
+* **Transparent automation footprints**: See what Chilla did and why, in plain language.
 
-All you need to do is **connect your account** and let Chilla do its thing. Watch its execution footprints over **3–6 months**, and you'll start seeing how it works steadily in the background.
+Just connect your broker, set your instructions, and step back. Review automation footprints over **3–6 months** to see how Chilla maintains discipline in the background.
 
-Chilla is here for **the long game**, helping you improve your life experiences while quietly working for you. You just chill. Chilla works.
+Chilla is built for the **long game**—helping you participate in markets without the burnout. You just chill. Chilla works.
 
 ![You Chill, AI Works - Relaxed Lifestyle with AI Automation](/images/person_relaxing_ai_h_9e22ad08.jpg)
 
