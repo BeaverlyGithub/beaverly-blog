@@ -49,7 +49,7 @@ I wanted to bring disciplined market participation to *everyone*—in a way that
 
 ## What BEAVERLY® really is
 
-BEAVERLY® is the **Intelligent Automation Infrastructure for Markets**.
+BEAVERLY® is the **Orchestration Layer for Modern Finance.**.
 
 That might sound big, but it breaks down into two clear layers:
 
